@@ -1,0 +1,32 @@
+@media (max-width: 768px) {
+    .sidebar {
+        left: -200px;
+    }
+
+    .change {
+        left: 0;
+        z-index: 9876;
+        top: 46px;
+        transition: left .8s cubic-bezier(1, 0, 0, 1);
+    }
+
+    .header {
+        margin-left: 0;
+        width: 100%;
+        vertical-align: middle;
+
+        .hamburger {
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            vertical-align: middle;
+            color: $white;
+            cursor: pointer;
+        }
+    }
+
+    .main {
+        margin-left: 0;
+        width: 100%;
+    }
+}

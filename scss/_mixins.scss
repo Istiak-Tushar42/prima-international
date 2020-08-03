@@ -1,0 +1,32 @@
+@mixin sign-up {
+    background-color: $primary-color;
+    border: none;
+    outline: none;
+    border-radius: .25rem;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1.25px;
+    padding: .5rem 1.25rem;
+    color: $white;
+    transition: .5s ease-in-out;
+    transition-property: background-color;
+
+    &:focus {
+        border: none;
+        outline: none;
+    }
+
+    &:hover {
+        background-color: $card-footer;
+    }
+}
+
+@mixin cardAfter {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    position: absolute;
+    font-size: 7rem;
+    top: 0;
+    right: 0;
+    opacity: .5;
+}

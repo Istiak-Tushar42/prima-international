@@ -1,0 +1,11 @@
+.lang {
+    select {
+        border: solid 1px $primary-color;
+        color: $primary-color;
+
+        &:focus {
+            border-color: $primary-color;
+            color: $primary-color;
+        }
+    }
+}

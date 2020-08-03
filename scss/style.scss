@@ -1,0 +1,255 @@
+@import 'variables';
+@import 'fonts';
+@import 'utilities';
+@import 'resettings';
+@import 'mixins';
+@import 'footer';
+@import 'register';
+
+#curve {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#curve path {
+    fill: $card-footer;
+}
+
+.sidebar {
+    width: 200px;
+    position: fixed;
+    height: 100%;
+    background: $white;
+    top: 0;
+    left: 0;
+
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+        width: 4px;
+        background: $primary-color;
+        border-radius: 0 4px 4px 0;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: $primary-color;
+        border-radius: 0 4px 4px 0;
+    }
+    
+    .navbar-brand {
+        color: $primary-color;
+        text-transform: uppercase;
+        font-size: 1.75rem;
+        &:hover {
+            color: $primary-color;
+        }
+    }
+
+    .user-profile {
+        padding: .5rem 1rem;
+        border-top: solid 1px #eee;
+        border-bottom: solid 1px #eee;
+
+        img {
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+            margin-right: .5rem;
+        }
+
+        p {
+            font-size: 13px;
+            margin-top: .25rem;
+        }
+    }
+
+    nav {
+        ul {
+            margin-top: 1.3rem;
+            li {
+                padding: .25rem 1rem;
+                color: #aaa;
+                margin: 0;
+
+                a {
+                    font-size: 13px;
+                    color: $hamburger-background;
+                    text-transform: capitalize;
+                }
+            }
+
+            .title {
+                font-size: 13px;
+                letter-spacing: 1.25px;
+            }
+
+            .active {
+                background: $primary-color;
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+                padding: .5rem;
+                a {
+                    color: $white;
+                }
+            }
+
+            .dropdown-menu {
+               .dropdown-item {
+                   text-transform: capitalize;
+                   padding: .4rem;
+                }
+            }
+        }
+    }
+}
+
+.header {
+    width: calc(100% - 200px);
+    background: linear-gradient(to right, #0AC4F8, #397CD5);
+    margin-left: 200px;
+    position: fixed;
+    top: 0;
+    z-index: 1111;
+
+    p {
+        margin-top: 1rem;
+        color: $white;
+        font-size: 14px;
+
+        i {
+            margin-right: .5rem;
+        }
+    }
+        
+    .nav-profile {
+        z-index: 1234;
+        img {
+            width: 30px;
+            height: 30px;
+            border-radius: 100%;
+        }
+
+        .nav-link {
+            color: $white;
+        }
+
+        .dropdown-menu {
+            margin-top: 2px;
+            z-index: 1234;
+
+            .dropdown-item {
+                padding: .5rem;
+                font-size: 13px;
+                font-weight: normal;
+            }
+        }
+    }
+
+    .language {
+        width: 100px;
+        
+        select {
+            background: #5B9FE2;
+            color: $white;
+            border: 0;
+            height: 27px;
+            margin-top: 6px;
+            font-size: 13px;
+            font-weight: normal;
+            padding: 0 200px;
+            
+
+            &:focus {
+                background: #5B9FE2;
+                color: $white;
+            }
+        }
+    }
+}
+
+main {
+    width: calc(100% - 200px);
+    margin-left: 200px;
+    margin-top: 60px;
+    margin-bottom: 1000px;
+    overflow: hidden;
+
+    .card {
+        color: white;
+        background: $primary-color;
+        margin: 0;
+        margin-bottom: 2rem;
+        border-radius: 15px;
+        
+        .card-body {
+            margin-bottom: 2rem;
+
+            .lead {
+                font-size: 28px;
+            }
+
+            .small {
+                font-size: 13px;
+            }
+
+            .circled {
+                i {
+                    background: #6195DD;
+                    border-radius: 10px;
+                    padding: .5rem;
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+
+        .curved {
+            position: relative;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+
+        a {
+            color: $white;
+        }
+
+        .card-footer {
+            background: $card-footer;
+            span {
+                font-size: 13px;
+            }
+        }
+    }
+
+    .card1 {
+        &::after {
+            content: "\f1b8";
+            @include cardAfter;
+        }
+    }
+
+    .card2 {
+        &::after {
+            content: "\f155";
+            @include cardAfter;
+        }
+    }
+
+    .card3 {
+        &::after {
+            content: "\f0c0";
+            @include cardAfter;
+        }
+    }
+
+    .card4 {
+        &::after {
+            content: "\f555";
+            @include cardAfter;
+        }
+    }
+}
+
+
+
+@import 'mobile';
