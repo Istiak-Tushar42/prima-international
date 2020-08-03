@@ -172,21 +172,21 @@ main {
     width: calc(100% - 200px);
     margin-left: 200px;
     margin-top: 60px;
-    margin-bottom: 1000px;
     overflow: hidden;
 
     .card {
         color: white;
         background: $primary-color;
         margin: 0;
-        margin-bottom: 2rem;
-        border-radius: 15px;
+        margin-bottom: 30px;
+        border-radius: 10px;
         
         .card-body {
             margin-bottom: 2rem;
 
             .lead {
                 font-size: 28px;
+                font-weight: bold;
             }
 
             .small {
@@ -205,8 +205,8 @@ main {
 
         .curved {
             position: relative;
-            border-bottom-left-radius: 15px;
-            border-bottom-right-radius: 15px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
         }
 
         a {
@@ -218,9 +218,75 @@ main {
             span {
                 font-size: 13px;
             }
+
+            a {
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
         }
     }
 
+    .feature {
+        padding: 1rem;
+        border-radius: 10px;
+        .stardom {
+            @include stardom;
+        }
+
+        .card {
+            background: #F5F8FD;
+            color: $hamburger-background;
+            border: 0;
+            text-align: center;
+
+            .card-img-top {
+                border-radius: 15px;
+                width: 140px;
+                height: 140px;
+                margin: 0 auto;
+            }
+
+            .card-body {
+                .card-title {
+                    color: #555F6E;
+                }
+                p {
+                    color: #747D8D;
+                }
+
+                h3 {
+                    background: $white;
+                    padding: 1rem 2rem;
+                    color: $primary-color;
+                    border-radius: 15px;
+
+                    span {
+                        font-size: 1.2rem;
+                        margin-left: 2rem;
+                        margin-top: -30px;
+                        color: #555F6E;
+                    }
+                }
+            }
+
+            .card-footer {
+                background: transparent;
+
+                a {
+                    color: $primary-color;
+
+                    &:hover {
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    
     .card1 {
         &::after {
             content: "\f1b8";
@@ -248,8 +314,28 @@ main {
             @include cardAfter;
         }
     }
-}
 
+    .feature {
+        .card {
+            .card-body {
+                h3 {
+                    padding: 0 !important;
+                    padding: .5rem 1.5rem !important;
+                    font-size: 1.25rem;
+                }
+            }
+        }
+    }
+
+    .account {
+        padding: 1rem;
+        border-radius: 10px;
+        background: red !important;
+        .stardom {
+            @include stardom;
+        }
+    }
+}
 
 
 @import 'mobile';

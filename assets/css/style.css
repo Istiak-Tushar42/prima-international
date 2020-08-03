@@ -70,6 +70,12 @@ p {
   margin: 0;
 }
 
+.btn:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+}
+
 footer {
   background: #D5DAE3;
   margin-bottom: 0;
@@ -410,7 +416,6 @@ main {
   width: calc(100% - 200px);
   margin-left: 200px;
   margin-top: 60px;
-  margin-bottom: 1000px;
   overflow: hidden;
 }
 
@@ -418,8 +423,8 @@ main .card {
   color: white;
   background: #3A7BD5;
   margin: 0;
-  margin-bottom: 2rem;
-  border-radius: 15px;
+  margin-bottom: 30px;
+  border-radius: 10px;
 }
 
 main .card .card-body {
@@ -428,6 +433,7 @@ main .card .card-body {
 
 main .card .card-body .lead {
   font-size: 28px;
+  font-weight: bold;
 }
 
 main .card .card-body .small {
@@ -443,8 +449,8 @@ main .card .card-body .circled i {
 
 main .card .curved {
   position: relative;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 main .card a {
@@ -459,48 +465,139 @@ main .card .card-footer span {
   font-size: 13px;
 }
 
-main .card1::after {
-  content: "\f1b8";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 600;
-  position: absolute;
-  font-size: 7rem;
-  top: 0;
-  right: 0;
-  opacity: .5;
+main .card .card-footer a:hover {
+  opacity: 0.8;
 }
 
-main .card2::after {
-  content: "\f155";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 600;
-  position: absolute;
-  font-size: 7rem;
-  top: 0;
-  right: 0;
-  opacity: .5;
+main .feature {
+  padding: 1rem;
+  border-radius: 10px;
 }
 
-main .card3::after {
-  content: "\f0c0";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 600;
-  position: absolute;
-  font-size: 7rem;
-  top: 0;
-  right: 0;
-  opacity: .5;
+main .feature .stardom {
+  width: 40px;
+  height: 40px;
+  background: #E7F7FD;
+  text-align: center;
+  margin-right: 1rem;
+  vertical-align: middle;
+  line-height: 40px;
+  font-size: 30px;
+  border-radius: 10px;
+  color: #3A7BD5;
 }
 
-main .card4::after {
-  content: "\f555";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 600;
-  position: absolute;
-  font-size: 7rem;
-  top: 0;
-  right: 0;
-  opacity: .5;
+main .feature .card {
+  background: #F5F8FD;
+  color: #2F3542;
+  border: 0;
+  text-align: center;
+}
+
+main .feature .card .card-img-top {
+  border-radius: 15px;
+  width: 140px;
+  height: 140px;
+  margin: 0 auto;
+}
+
+main .feature .card .card-body .card-title {
+  color: #555F6E;
+}
+
+main .feature .card .card-body p {
+  color: #747D8D;
+}
+
+main .feature .card .card-body h3 {
+  background: #FFFFFF;
+  padding: 1rem 2rem;
+  color: #3A7BD5;
+  border-radius: 15px;
+}
+
+main .feature .card .card-body h3 span {
+  font-size: 1.2rem;
+  margin-left: 2rem;
+  margin-top: -30px;
+  color: #555F6E;
+}
+
+main .feature .card .card-footer {
+  background: transparent;
+}
+
+main .feature .card .card-footer a {
+  color: #3A7BD5;
+}
+
+main .feature .card .card-footer a:hover {
+  color: #FFFFFF;
+}
+
+@media (min-width: 768px) {
+  .card1::after {
+    content: "\f1b8";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    position: absolute;
+    font-size: 7rem;
+    top: 0;
+    right: 0;
+    opacity: .5;
+  }
+  .card2::after {
+    content: "\f155";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    position: absolute;
+    font-size: 7rem;
+    top: 0;
+    right: 0;
+    opacity: .5;
+  }
+  .card3::after {
+    content: "\f0c0";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    position: absolute;
+    font-size: 7rem;
+    top: 0;
+    right: 0;
+    opacity: .5;
+  }
+  .card4::after {
+    content: "\f555";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    position: absolute;
+    font-size: 7rem;
+    top: 0;
+    right: 0;
+    opacity: .5;
+  }
+  .feature .card .card-body h3 {
+    padding: 0 !important;
+    padding: .5rem 1.5rem !important;
+    font-size: 1.25rem;
+  }
+  .account {
+    padding: 1rem;
+    border-radius: 10px;
+    background: red !important;
+  }
+  .account .stardom {
+    width: 40px;
+    height: 40px;
+    background: #E7F7FD;
+    text-align: center;
+    margin-right: 1rem;
+    vertical-align: middle;
+    line-height: 40px;
+    font-size: 30px;
+    border-radius: 10px;
+    color: #3A7BD5;
+  }
 }
 
 @media (max-width: 768px) {
