@@ -1,0 +1,106 @@
+.main {
+    width: calc(100% - 200px);
+    margin-left: 200px;
+    margin-top: 130px;
+
+    .card {
+        .card-header {
+            padding: 20px;
+            display: flex;
+            .prof {
+                @include stardom;
+            }
+            h6 {
+                font-size: 14px;
+                margin-top: 14px;
+            }
+        }
+
+        .card-body {
+            .forgotPin {
+                .pin {
+                    background: #E8ECF7;
+                    color: #4279BC;
+                    padding: .5rem;
+                    margin-bottom: .5rem;
+                    border-radius: 10px;
+                    font-size: 12px;
+                }
+
+                p {
+                    margin-top: 8px;
+                    font-size: 14px !important;
+                    color: #57606F;
+                }
+            }
+
+            table {
+                font-size: 13px;
+                a {
+                    color: #4279BC;
+                }
+                thead {
+                    background: #F7FAFC;;
+                }
+            }
+
+            form {
+                .darken {
+                    background: #F7FAFC;
+                    padding: 20px;
+                    border-radius: 20px;
+                }
+            }
+
+            .amount {
+                background: #F7FAFC;
+                border-radius: 10px;
+                padding: 15px;
+                .total {
+                    span {
+                        font-size: 10px;
+                    }
+                    p {
+                        background: $white;
+                        border-radius: 10px;
+                        padding: 8px;
+                        font-size: 10px;
+                        margin-top: 16px;
+                    }
+                }
+            }
+
+            .btn-otp {
+                background: #E8ECF7;
+                color: #4279BC;
+
+                &:hover {
+                    color: #E8ECF7;
+                    background: #4279BC;
+                }
+            }
+
+            .roundes {
+                background: #F7FAFC;
+                padding: .5rem;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+
+.deposittitle {
+    font-size: 14px !important;
+}
+
+.otpt {
+    font-size: 11px !important;
+}
+
+.service {
+    font-size: 12px !important;
+}
+
+h4, h5 {
+    font-size: 12px;
+}

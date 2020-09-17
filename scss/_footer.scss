@@ -1,8 +1,13 @@
 footer {
     background: $title-bottom-text;
     margin-bottom: 0;
+    padding: .4rem;
+    margin-top: 2rem;
     p {
         font-size: 14px;
         color: $title-color;
+        color: $card-footer;
+        font-weight: bold;
+        padding: .5rem;
     }
 }
