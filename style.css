@@ -1642,7 +1642,7 @@ main .marg {
   header, footer, div, section, main {
     display: none !important;
   }
-  .desktop-text {
+  aside {
     display: block;
     text-align: center;
     font-size: 4rem;
