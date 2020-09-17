@@ -1643,7 +1643,7 @@ main .marg {
     display: none !important;
   }
   .desktop-text {
-    display: block !important;
+    display: block;
     text-align: center;
     font-size: 4rem;
     margin-top: 15rem;
